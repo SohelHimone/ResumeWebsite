@@ -1,68 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.6vw;
+    font-family: 'Roboto';
 
 }
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    body {
+      font-size: 15px;
+    }
+  }
 .Main-container{
     height: 100vh;
-    background-image: url("https://as1.ftcdn.net/v2/jpg/05/66/08/08/1000_F_566080805_0dn6puk0HIff3qP3anTK5LJ7B0FF7Do6.jpg");
+    width:100vw;
+    background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-technology-background-binary-computer-code-vector-design-picture-image_1264148.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 2rem;
+    padding: 2rem 1rem;
     color: white;
     position: relative;
 
   
 }
 .MyInfo{
-    height: 10%;
-    width: 90%;
+    max-width: 800px;
+    padding: 0rem 1rem;
+    height: auto;
     position: relative;
     left: 5%;
+    margin-bottom: 3rem;
+    /* border: 1px solid blue; */
 }
 h1{
     color: aqua;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 h3{
     color: greenyellow;
-}
-p{
     font-size: 2rem;
-}
-.Modules{
-    height: 90%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* border: 1px solid black; */
+    margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1.2rem; 
+    }
+    h3{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+p {
+    font-size: 1.5rem;
+  }
+  
+@media screen and (max-width: 600px) {
+    p {
+      font-size: 1rem;
+    }
+}
+.Modules{
+    height: auto;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;/* allow items to wrap to next line */
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    /* border: 1px solid blue; */
+    
+}
+
+@media screen and (max-width:600px){
+    .modules{
+        margin-top: 3rem;
+    }
+}
 .link{
-    height: 100px;
-    width:100px;
+    height: 80px;
+    width:80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     border: 1px solid black;
     justify-content: center;
-    background-color: burlywood;
+    background-color: rgb(13, 250, 191);
+    margin: 1rem;
 
 
 }
 
 .link i{
-    font-size: 4rem;
-    /* border-radius: 50%; */
-    /* border: 1px solid black; */
+    font-size: 3rem;
+    color:black
 }
 
+@media screen and (max-width:600px){
+    .link{
+        height: 60px;
+        width:60px;
+        margin-bottom: 0.5rem;
+    }
+    .link i{
+        font-size: 2rem;
+    }
+}
+
+
 .link:hover{
-    box-shadow: 0px 0px 6px 4px rgba(232, 10, 40, 0.3);
+    box-shadow: 0px 0px 6px 4px rgba(230, 250, 48, 0.941);
     transform: translateY(-10px);
 }
+
